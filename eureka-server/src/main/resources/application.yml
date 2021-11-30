@@ -1,0 +1,29 @@
+server:
+  # 指定运行端口
+  port: 8761
+
+spring:
+  application:
+    # 指定服务名称
+    name: eureka-server
+
+eureka:
+  instance:
+    # 指定主机地址
+    hostname: locathost
+  client:
+    # 是否要注册到注册中心（注册中心不需要开启）
+    # false 表示不向注册中心注册自己
+    register-with-eureka: false
+    # 是否要从注册中心获取服务（注册中心不需要开启）
+    # false 表示自己就是注册中心，职责就是维护服务实例，并不需要去检索服务
+    fetch-registry: false
+  # server:
+    # 关闭保护模式
+    # enable-self-preservation: false
+
+
+
+
+
+
