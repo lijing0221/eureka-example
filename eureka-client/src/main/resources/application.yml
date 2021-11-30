@@ -1,0 +1,15 @@
+server:
+  # 指定运行端口
+  port: 8762
+
+spring:
+  application:
+    # 指定服务名称
+    name: eureka-client-8762
+
+eureka:
+  client:
+    service-url:
+      # 设置与 Eureka server 交互的地址
+      # 查询服务和注册服务都需要依赖这个地址
+      defaultZone: http://localhost:8761/eureka/
