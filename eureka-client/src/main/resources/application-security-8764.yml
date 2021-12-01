@@ -1,0 +1,11 @@
+server:
+  port: 8764
+
+spring:
+  application:
+    name: eureka-security-client
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:123456@localhost:8003/eureka/
