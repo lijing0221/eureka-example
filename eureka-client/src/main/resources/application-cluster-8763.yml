@@ -1,0 +1,12 @@
+server:
+  port: 8763
+
+spring:
+  application:
+    name: eureka-cluster-client
+
+eureka:
+  client:
+    service-url:
+      # 同时注册到两个注册中心
+      defaultZone: http://cluster-8001:8001/eureka/,http://cluster-8002:8002/eureka/

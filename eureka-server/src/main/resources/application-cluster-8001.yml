@@ -1,0 +1,15 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: eureka-server-cluster-8001
+
+eureka:
+  instance:
+    hostname: cluster-8001
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://cluster-8002:8002/eureka/
