@@ -21,9 +21,3 @@ eureka:
   # server:
     # 关闭保护模式
     # enable-self-preservation: false
-
-
-
-
-
-
